@@ -6,9 +6,9 @@ int main(){
     int b = 8;
 
    
-    int c = a + b;
-    a = c - a;
-    b = c - b;
+    a = a + b;
+    b = a - b;
+    a = a - b;
 
     printf("After the swapping the value of a : %d || b : %d",a,b);
     
