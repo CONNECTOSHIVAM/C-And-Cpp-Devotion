@@ -1,4 +1,4 @@
-// Q.
+// Q.check even and odd other number without using the % operator.
 
 #include<stdio.h>
 int main(){
