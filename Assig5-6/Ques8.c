@@ -1,24 +1,25 @@
 // Q. write a program to check wheather roots of a given quadratic are real & distinct,
 // real and equal or imagenary roots.
 
-#include<stdio.h>
-#include<math.h>
-int main(){
+#include <stdio.h>
+#include <math.h>
 
-    int a,b,c;
-    printf("Enter the value of a | b | c | :");
-    scanf("%d%d%d",&a,&b,&c);
+int main() {
+    int a, b, c;
+    printf("Enter the values of a, b, c: ");
+    scanf("%d %d %d", &a, &b, &c);
 
-    int x1 = -b + sqrt((b*b)-(4*a*c))/2*a;
-    int x2 = -b - sqrt((b*b)-(4*a*c))/2*a;
+    double discriminant = b*b - 4*a*c;
 
-    if(x1 != x2 && x1 > 0 && x2 > 0)
-    {
-        printf("value of x(%d,%d) real and distinct.",x1,x2);
-    }else if(x1==x2){
-        printf("value of x(%d,%d) real and equal.",x1,x2);
-    }else{
-        printf("value of x(%d,%d) are imaginary",x1,x2);
+    if (discriminant > 0) {
+        double x1 = (-b + sqrt(discriminant)) / (2.0 * a);
+        double x2 = (-b - sqrt(discriminant)) / (2.0 * a);
+        printf("Roots are real and distinct: %.2f , %.2f\n", x1, x2);
+    } else if (discriminant == 0) {
+        double x = -b / (2.0 * a);
+        printf("Roots are real and equal: %.2f , %.2f\n", x, x);
+    } else {
+        printf("Roots are imaginary.\n");
     }
 
     return 0;
