@@ -16,7 +16,7 @@ int main(){
 
     for(int i = 2;i<=sqrt(n);i++)
     {
-        if(n%2==0)
+        if(n%i==0)
         {
             printf("%d is not Prime numbers.",n);
             break;
