@@ -1,6 +1,7 @@
 // Q. write a program to check wheather entered number is prime number or not.
 
 #include<stdio.h>
+#include<math.h>
 int main(){
 
     int n;
@@ -11,12 +12,9 @@ int main(){
     {
         printf("Enter number %d is not Prime number. ",n);
     }
-    else if (n<=3)
-    {
-        printf("%d is  Prime numbers.",n);
-    }
+   
 
-    for(int i = 2;i<=n/2;i++)
+    for(int i = 2;i<=sqrt(n);i++)
     {
         if(n%2==0)
         {
