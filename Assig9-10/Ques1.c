@@ -1,4 +1,4 @@
-// write a program to print the sum of n naturals numbers.
+// Q. write a program to print the sum of n naturals numbers.
 
 #include <stdio.h>
 int main(){
