@@ -23,4 +23,6 @@ int main(){
         }
         printf("fibonacci of %d number : %d",n,b);
     }
+
+    return 0;
 }
