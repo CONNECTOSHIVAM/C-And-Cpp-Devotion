@@ -1,34 +1,34 @@
 // Q13. write a program to check wheather is given number is there in the fibonacci
 // serise or not.
 
-#include<stdio.h>
-int main(){
+#include <stdio.h>
+int main()
+{
 
-    int a=-1,b=-1,c;
-    printf("Enter the number: ");
-    scanf("%d",&c);
+    int a = -1, b = 1, n;
+
+    printf("Enter the Number: ");
+    scanf("%d", &n);
 
     int i = 0;
-    int arr[c];
-    while (i<=c)
-    {
-       int temp = b;
-       b = a + b;
-       a = temp;
-       arr.push(b);
-       i++;
-    }
 
-    for(int i =0;i<=arr.size();i++)
+    while (i <= n)
     {
-        if(arr[i]==c)
+        int temp = b;
+        b = b + a;
+        a = temp;
+        if (b == n)
         {
-            printf("Yes, this number exist in fibonacci serise.");
-        }else{
-            
+            printf("Yes, %d is part of the fibonacci serise.",n);
+            break;
         }
+        if (b >= n)
+        {
+            printf("No, %d is not part of the fibonacci serise.",n);
+            break;
+        }
+        i++;
     }
-    
 
     return 0;
 }
