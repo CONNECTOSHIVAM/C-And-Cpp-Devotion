@@ -1,4 +1,4 @@
-// Q. write a program to check a given number is an armstrong number or not.    
+// Q19. write a program to check a given number is an armstrong number or not.    
 
 #include<stdio.h>
 #include<math.h>
