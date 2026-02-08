@@ -1,43 +1,39 @@
-// Q. find the armstrong number till 100.
-
-#include<stdio.h>
+// Armstrong numbers till 100
+#include <stdio.h>
 int main()
 {
-  int a,sum=0;
-  printf("Enter the Number: ");
-  scanf("%d",&a);
-
-  int x = a;
-
-  int count = 0;
-  while (a>0)
-  {
-    a = a/10;
-    count++;
-  }
-
-  a = x;
-
-  
-  while (a>0)
-  {
-    int z = a%10;
-    int mul = 1;
-    for (int i = 0; i < count; i++)
+    for (int num = 1; num <= 1000; num++)
     {
-       mul *= z;
-    }
-    sum += mul;
-    a = a/10;
-  }
+        int sum = 0;
+        int temp = num;
 
-  if(x==sum)
-  {
-    printf("%d is the armstrong number.",x);
-  }else{
-    printf("%d is not armstrong number.",x);
-  }
-  
-  return 0;
-  
+        // Count digits
+        int count = 0;
+        int t = temp;
+        while (t > 0)
+        {
+            t = t / 10;
+            count++;
+        }
+
+        // Calculate Armstrong sum
+        t = temp;
+        while (t > 0)
+        {
+            int digit = t % 10;
+            int mul = 1;
+            for (int i = 0; i < count; i++)
+            {
+                mul *= digit;
+            }
+            sum += mul;
+            t = t / 10;
+        }
+
+        if (sum == num)
+        {
+            printf("%d is an Armstrong number\n", num);
+        }
+    }
+    return 0;
 }
