@@ -1,4 +1,4 @@
-// Q. Armstrong numbers till 100
+// Q20. Armstrong numbers till 100
 #include <stdio.h>
 int main()
 {
