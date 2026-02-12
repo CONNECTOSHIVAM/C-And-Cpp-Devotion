@@ -8,11 +8,14 @@
 #include<stdio.h>
 int main(){
 
-    for(int i = 0;i<=5;i++)
+
+    int a=1;
+    for(int i =1;i<5;i++)
     {
-        for(int j=i+1;j<=i;j++)
+        for(int j=i;j>=1;j--)
         {
-            printf("%d ",j);
+            printf("%d ",a);
+            a++;
         }
         printf("\n");
     }
