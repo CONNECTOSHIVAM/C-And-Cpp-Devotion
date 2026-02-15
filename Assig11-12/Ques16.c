@@ -20,11 +20,11 @@ int main()
           printf("%c ",a);
           a++;
        }
-       a--;
-       for(int j=1;j<=i-j;j++)
+       a-=2;
+       for(int j=i-1;j>=1;j--)
        {
-         a--;
          printf("%c ",a);
+         a--;
        }
        printf("\n");
     }
