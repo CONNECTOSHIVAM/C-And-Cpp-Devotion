@@ -14,6 +14,19 @@ int main()
        {
         printf("  ");
        }
+       char a = 'A';
+       for(int j=1;j<=i;j++)
+       {
+          printf("%c ",a);
+          a++;
+       }
+       a--;
+       for(int j=1;j<=i-j;j++)
+       {
+         a--;
+         printf("%c ",a);
+       }
+       printf("\n");
     }
 
     return 0;
