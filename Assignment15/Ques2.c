@@ -14,7 +14,7 @@ int main()
 int hcf(int x,int y)
 {
    int L = x>y?x:y;
-   for(int i=L;i<=y;i--)
+   for(int i=L;i>=1;i--)
    {
     if(x%i==0 && y%i==0)
     {
