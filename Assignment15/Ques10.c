@@ -10,7 +10,7 @@ int main()
     scanf("%d",&num);
 
     long long result = sum_of_n(num);
-    printf("Sum of first N terms: %d",result);
+    printf("Sum of first N terms: %lld",result);
     return 0;
 }
 long long sum_of_n(int n)
