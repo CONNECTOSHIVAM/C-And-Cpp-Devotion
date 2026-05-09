@@ -1,25 +1,25 @@
-// Q8.
-// Q7.write a recursive function to calculate the HCF of 2 numbers.
-#include <stdio.h>
-int hcf(int x, int y);
+// Q8. write a recursive function to print first N terms of fibonacci serise.
+#include<stdio.h>
+int fibonacci_serise(int a);
 int main()
 {
-    int a, b;
-    printf("Enter the 2 number: ");
-    scanf("%d%d", &a, &b);
+    int num;
+    printf("Enter the number: ");
+    scanf("%d",&num);
 
-    int result = hcf(a, b);
-    printf("HCF(%d,%d) is: %d ", a, b, result);
+    printf("Fibonacci serise of Firsr %d terms: ",num);
+    for (int i = 0; i < num; i++)
+    {
+        printf("%d ",fibonacci_serise(i));
+    }
+    
     return 0;
 }
-
-int hcf(int x, int y)
+int fibonacci_serise(int a)
 {
-    for (int i = x > y ? y : x; i >= 1; i--)
-    {
-        if (i % x == 0 && i % y == 0)
-        {
-            return i;
-        }
-    }
+   if(a==0 || a==1)
+   {
+     return a;
+   }
+   return fibonacci_serise(a-1)+fibonacci_serise(a-2);
 }
