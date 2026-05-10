@@ -1,20 +1,16 @@
-#include<stdio.h>
+// Q4. write a program to find the gratest number stored in an array of size 10. take 
+// array value from the user.(for positive numbers)
 
+#include <stdio.h>
 int main()
 {
-    int num[10], even=0, odd=0;
-
-    printf("Enter the 10 numbers: ");
-
-    for(int i=0; i<10; i++)
+    int num[10],max=0;
+    printf("Enter the 10 number: \n");
+    for (int i = 0; i < 10; i++)
     {
-        scanf("%d",&num[i]);
-
-        num[i] % 2 ? odd += num[i] : even += num[i];
+        scanf("%d", &num[i]);
+        max > num[i] ? max : (max = num[i]);
     }
-
-    printf("Sum of even numbers: %d\n", even);
-    printf("Sum of odd numbers: %d\n", odd);
-
+    printf("Gratest number in this array : %d", max);
     return 0;
 }
