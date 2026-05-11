@@ -8,7 +8,7 @@ int main()
     {
         scanf("%d",&num[i]);
     }
-    int prevMax,a,b, max=num[0];
+    int prevMax, max=num[0];
     for (int i = 1; i < 6; i++)
     {
         if(max<num[i])
