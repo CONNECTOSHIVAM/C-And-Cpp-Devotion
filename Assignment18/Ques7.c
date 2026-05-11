@@ -22,8 +22,8 @@ int main()
         }
     }
 
-    printf("gratest value in this array: %d \n",max);
-    printf("2nd gratest value in this array: %d",prevMax);
+    printf("greatest value: %d \n",max);
+    printf("second greatest value: %d",prevMax);
 
     return 0;
     
