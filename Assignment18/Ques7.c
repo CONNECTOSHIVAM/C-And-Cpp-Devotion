@@ -1,4 +1,4 @@
-// Q7. write a program to find second largest in an array . take array values from the user.
+// Q7. write a program to find second largest in an array  take array values from the user.
 #include<stdio.h>
 int main()
 {
