@@ -14,14 +14,19 @@ int main()
     }
 
     sortedMachine(arr, s);
-    
+
+    printf("sorted array in asending order: ");
+    for (int i = 0; i < s; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 
     return 0;
 }
 
 void sortedMachine(int arr[], int size)
 {
-  for (int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         for (int j = 0; j < size - i; j++)
         {
@@ -32,11 +37,5 @@ void sortedMachine(int arr[], int size)
                 arr[j + 1] = temp;
             }
         }
-    }
-
-    printf("sorted array: \n");
-    for (int i = 0; i < size; i++)
-    {
-        printf("%d ", arr[i]);
     }
 }
