@@ -41,7 +41,7 @@ void rotateArray(int arr[],int size,int pos,int direc)
         while (pos)
         {
             temp = arr[size-1];
-            for (int i = size-1; i > 0; i--)
+            for (int i = size-2; i >=  0; i--)
             {
                 arr[i+1] = arr[i];
             }
@@ -54,7 +54,7 @@ void rotateArray(int arr[],int size,int pos,int direc)
         while (pos)
         {
             temp=arr[0];
-            for (int i = 1; i < size-1; i++)
+            for (int i = 1; i < size; i++)
             {
                 arr[i-1]=arr[i];
             }
