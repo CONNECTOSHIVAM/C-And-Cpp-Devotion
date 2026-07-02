@@ -45,7 +45,7 @@ void rotateArray(int arr[],int size,int pos,int direc)
             {
                 arr[i+1] = arr[i];
             }
-            arr[0] = temp;
+            arr[0] = temp; // temp --> temporary assignment
             pos--;
             
         } 
